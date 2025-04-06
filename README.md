@@ -44,37 +44,10 @@ The calculator applies the following steps:
 
 Effective Overburden Pressure:
 
-If test depth is above water table:
+Test depth is above water table:
 
-vbnet
-Copy
-Edit
-σ' = γ_moist × depth
-If below water table:
-
-vbnet
-Copy
-Edit
-σ' = (γ_moist × water_table) + (γ_sub × (depth - water_table))
-Overburden Correction:
-
-mathematica
-Copy
-Edit
-N₁ = N × sqrt(p_ref / σ')
-Dilatancy Correction (for saturated fine sands & silts):
-
-mathematica
-Copy
-Edit
-If N₁ > 15 → N₂ = 15 + 0.5 × (N₁ - 15)
-Else → N₂ = N₁
 SBC Calculation:
 
-ini
-Copy
-Edit
-SBC = 10 × N₂ (in kN/m²)
 📄 PDF Report
 The generated report includes:
 
@@ -97,10 +70,6 @@ This calculator is developed for NCC Co & Lab Pvt Ltd to assist field and design
 
 📬 Feedback
 If you'd like to contribute or report an issue, feel free to open a pull request or contact the developer.
-
-yaml
-Copy
-Edit
 
 ---
 
